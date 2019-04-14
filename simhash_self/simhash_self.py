@@ -4,8 +4,6 @@ Created on Fri Apr 14 11:05:47 2019
 
 @author: jsy
 """
-
-# -*- coding: utf-8 -*-
 import jieba
 import jieba.analyse
 import hashlib
