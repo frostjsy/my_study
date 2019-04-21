@@ -10,5 +10,5 @@
 缺点：计算复杂度高，空间复杂度高  
 适用数据范围：数值型和标称型    
 
-**来源：**机器学习实战（第二章）
+**来源：**机器学习实战(第二章)
 https://github.com/pbharrin/machinelearninginaction
