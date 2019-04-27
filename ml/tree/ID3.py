@@ -59,7 +59,7 @@ def chooseBestFeature(data):
             bestFea = i
     return bestFea                    
 
-#获取最大类别数
+#获取最多数类别的标签
 def maxCnt(classList):
     classCount={}
     for vote in classList:
