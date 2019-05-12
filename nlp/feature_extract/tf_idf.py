@@ -8,24 +8,27 @@ import math
 import jieba
 import numpy as np
 
+#计算某词在某一文档中出现的词频
 def tf(word,doc):
     tf_dict={}
     for w in doc:
         cnt=tf_dict.get(w,0)+1
         tf_dict[w]=cnt
     return tf_dict[w]
-    
+
+#计算语料库中包含该词的文档数    
 def docs_contains_word(word, D):
   return sum(1 for d in D if word in d)
- 
+
+#计算idf值
 def idf(word, D):
   return math.log(len(D)/(1 + docs_contains_word(word, D)))
  
 def tfidf(word,doc,D):
   return tf(word, doc) * idf(word, D)
 
+#测试
 if __name__=="__main__":
-
     #语料库
     Docs =["非关癖爱轻模样，冷处偏佳。别有根芽，不是人间富贵花。",
            "谢娘别后谁能惜，漂泊天涯。寒月悲笳，万里西风瀚海沙。",
@@ -39,8 +42,3 @@ if __name__=="__main__":
           
     print(D)
     print(tfidf(D[0][0],D[0],D))
-
-
-
-
-    
