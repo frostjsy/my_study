@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-@time:2019-04-21
+@time:2019-06-01
 
-@author:jiangshuangyan001
-
-@email:jiangshuangyan001@ke.com
+@author:jsy
 
 """
 
